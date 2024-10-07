@@ -1,5 +1,7 @@
+# Appium Hybrid Testing Framework with TestNG and Extent Reports
+
 ## Overview
-This project uses Appium, TestNG, and Extent Reports for automated testing. This framework can use for both together of Android & iOS platforms.
+This project utilizes Appium, TestNG, and Extent Reports to provide a robust automated testing framework for both Android and iOS platforms.
 
 ## Prerequisites
 - Java 17 or higher
@@ -8,4 +10,4 @@ This project uses Appium, TestNG, and Extent Reports for automated testing. This
 - TestNG 7.5v or higher
 - Selenium-support 4.22.0v or higher
 - Extent reports 5.0v or higher
-- 
+- Node.js:** Required for Appium
