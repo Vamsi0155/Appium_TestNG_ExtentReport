@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite" parallel="tests" thread-count="4" verbose="1">
+
+    <listeners>
+        <listener class-name="app.GS.utils.Reports" />
+    </listeners>
+
+    <!-- On Android platform -->
+    <test name="Android Smoke Tests">
+        <parameter name="Platform" value="Android"/>
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+    </test>
+
+    <!-- On iOS platform -->
+    <!--    <test name="iOS Smoke Tests">
+            <parameter name="Platform" value="iOS"/>
+            <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+        </test> -->
+
+</suite>

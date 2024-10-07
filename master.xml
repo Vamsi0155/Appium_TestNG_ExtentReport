@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AutomationSuite" parallel="tests" thread-count="4" verbose="1">
+
+    <listeners>
+        <listener class-name="app.GS.utils.Reports" />
+    </listeners>
+    <!-- Define Parameters -->
+<!--    <parameter name="environment" value="QA" />-->
+
+    <!-- On Android platform -->
+    <test name="Android Functional">
+        <parameter name="Platform" value="Android"/>
+        <classes>
+            <class name="app.GS.tests.General_Store_Test"/>
+            <class name="app.GS.tests.Multi_Data_Test"/>
+        </classes>
+    </test>
+
+    <!-- On iOS platform -->
+    <!--    <test name="iOS Functional">
+            <parameter name="Platform" value="iOS"/>
+            <classes>
+                <class name="app.GS.tests.General_Store_Test"/>
+                <class name="app.GS.tests.Multi_Data_Test"/>
+            </classes>
+        </test> -->
+
+</suite>

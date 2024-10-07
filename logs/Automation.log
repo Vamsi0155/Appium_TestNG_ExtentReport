@@ -1,0 +1,18 @@
+22:09:02.651 [main] INFO  BaseTest.class - !!!! Automation suite has started !!!!
+22:09:02.658 [main] INFO  BaseTest.class - Appium server has started!!!!
+22:09:03.257 [TestNG-tests-1] INFO  Reports.class - Android Functional Tests are started on Android platform!!
+22:09:03.351 [TestNG-tests-1] INFO  BaseTest.class - Android details are set!!
+22:09:24.784 [TestNG-tests-1] INFO  BaseTest.class - Android driver initialized!!
+22:09:29.010 [TestNG-tests-1] INFO  Reports.class - verifyTotalAmount_multipleDataTest test is started
+22:10:03.959 [TestNG-tests-1] INFO  Reports.class - verifyTotalAmount_multipleDataTest test is passed successfully
+22:10:04.161 [TestNG-tests-1] INFO  Reports.class - verifyTotalAmount_multipleDataTest test is started
+22:10:25.894 [TestNG-tests-1] INFO  Reports.class - verifyTotalAmount_multipleDataTest test is failed with below error
+22:10:25.895 [TestNG-tests-1] INFO  Reports.class - failure reason is: Expected condition failed: waiting for visibility of element located by By.id: com.androidsample.generalstore:id/spinnerCountry (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: E:\IntelliJ_Workspace\Appiu..., appium:appPackage: com.androidsample.generalstore, appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: E:\IntelliJ_Workspace\Appiu..., autoGrantPermissions: true, automationName: UIAutomator2, deviceName: emulator-5554, newCommandTimeout: 20, platformName: ANDROID, platformVersion: 15}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 480, appium:deviceScreenSize: 1344x2992, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 20, appium:pixelRatio: 3, appium:platformVersion: 15, appium:statBarHeight: 151, appium:takesScreenshot: true, appium:viewportRect: {height: 2841, left: 0, top: 151, width: 1344}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e5994159-940a-4017-a012-bd66a6c67ca9
+22:10:27.639 [TestNG-tests-1] INFO  BaseTest.class - Appium driver closed!!
+22:10:29.329 [TestNG-tests-1] INFO  Reports.class - Android Functional Tests are finished!!
+22:10:29.336 [main] INFO  BaseTest.class - !!!! Automation suite has completed !!!!
