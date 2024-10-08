@@ -39,3 +39,36 @@ mvn clean test -PfailedTests
 ```bash
 mvn clean test -DsuiteXmlFile=master.xml
 ```
+
+## BrowserStack Integration
+1. open A/c in BrowserStack (100min for free trial).
+2. Install BrowserStack plug-in in the Eclipse/Intellij.
+3. Important note,
+ - Appium client must be up to date (latest version).
+ - TestNG 7.0v or higher.
+4. Convert to the BrowserStack compatible.
+ - Right click on project
+ - choose BrowserStack
+ - select "Integrate with App Automate SDK"
+ - enter project name & build name.
+ - enter user name (find in BrowserStack dashboard)
+ - enter access key (find in BrowserStack dashboard)
+ - enter app (Initially, you can upload your app into the BrowserStack and will generate it. find in Browser stack dashboard).
+ - click on "Integrate".
+ - wait for Build success and refresh the project.
+ - "browserstack.yml" file will be generated.
+5. In YML file,
+ - Verify user name, access key, and app path.
+ - Go to Platforms section, you will get few devices by default. Add same way
+ - Set "ParallelsPerPlatform"
+
+### To run the tests on browser stack, use the following command:
+```bash
+mvn clean test -PRegression
+```
+
+### To run tests in local, use the following command:
+Note: Set as false after converting the project into BrowserStack.
+```bash
+BROWSERSTACK_AUTOMATION=false mvn clean test -PRegression
+```
