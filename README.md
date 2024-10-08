@@ -72,3 +72,26 @@ Note: Set as false after converting the project into BrowserStack.
 ```bash
 BROWSERSTACK_AUTOMATION=false mvn clean test -PRegression
 ```
+
+## Jenkins CI/CD
+
+#### General Section:
+ Select "This project is parameterized" and set below parameters.
+1. Set 2 choice parameters and those are,
+ - Profile
+ - Browser Stack
+2. For 1st parameter, set below details:
+ - Name: Profile
+ - Choices: Regression, Smoke, Failed-tests
+ - Description:
+3. For 2nd parameter set below details:
+ - Name: Browser Stack
+ - Choices: True, False
+ - Description:
+#### Build Section:
+1. choose "add build step" as a "Invoke top-level maven targets"
+2. Set Goals as below command:
+```bash
+BROWSERSTACK_AUTOMATION={$Browser_Stack) clean test -P{$Profile}
+```
+Note: Add project path in the custom workspace field and Also remainings as per requirements.
