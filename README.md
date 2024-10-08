@@ -19,16 +19,23 @@ In the pom.xml, we have configured 3 Maven profiles: regression, smoke, and fail
 To build the project and download all dependencies, run the following Maven command:
 ```bash
 mvn clean install
+```
 
 ### To run the regression suite, use the following command:
 ```bash
 mvn clean test -PRegression
+```
 
 ### To run the smoke suite, use the following command:
 ```bash
 mvn clean test -PSmoke
+```
 
 ### To re-run failed tests, use the following command:
 ```bash
 mvn clean test -PfailedTests
-
+```
+### To run any XML file, use the following command:
+```bash
+mvn clean test -DsuiteXmlFile=master.xml
+```
