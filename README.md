@@ -1,7 +1,22 @@
 # Appium Hybrid Testing Framework with TestNG and Extent Reports
 
 ## Overview
-This project utilizes Appium, TestNG, and Extent Reports to provide a robust automated testing framework for both Android and iOS platforms.
+This repository contains a hybrid automation framework built with Appium for testing Android and iOS applications. The framework integrates TestNG for test execution and Extent Reports for rich, interactive test reporting. It is designed to support both platforms efficiently while maintaining a modular and scalable architecture.
+### Key Features
+#### Cross-Platform Testing:
+- Supports both Android and iOS platforms.
+#### Supports Hybrid, Native, and Web Apps:
+- The framework is flexible enough to test different types of applications across mobile platforms.
+#### Parallel Execution:
+- Runs multiple tests concurrently to reduce execution time.
+#### TestNG Integration:
+- Provides powerful test management, including annotations, grouping, and parallel execution.
+#### Extent Reports:
+- Generates visually appealing and detailed test reports with screenshots, logs, and results.
+#### Page Object Model (POM):
+- Ensures reusability and maintainability by structuring the code in a clear and modular format.
+#### Data-Driven Testing:
+- Supports parameterized tests with different data sets to enhance test coverage.
 
 ## Prerequisites
 - Java 17 or higher
@@ -10,9 +25,12 @@ This project utilizes Appium, TestNG, and Extent Reports to provide a robust aut
 - TestNG 7.5v or higher
 - Selenium-support 4.22.0v or higher
 - Extent reports 5.0v or higher
-- Node.js: Required for Appium
+- Node.js: Required for Appium-Server
+- Appium-Inspector
+- Android Studio (for Android)
+- Xcode (for iOS)
 
-## How to Run
+## How to run from cmd line
 In the pom.xml, we have configured 3 Maven profiles: regression, smoke, and failed-tests. These profiles allow you to execute specific sets of tests based on the scenario. You can run any of these profiles using Maven commands as described below.
 
 ### Build the Project
